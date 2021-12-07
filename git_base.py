@@ -63,7 +63,8 @@ def git_setIdentity():
 def git_rm_upstream():
     print("**")
     lines = [
-            "git remote rm upstream"
+            #"git remote rm upstream"
+            'git remote rm upstream'
         ]
     print("**")
     return cmd_lines(lines)
