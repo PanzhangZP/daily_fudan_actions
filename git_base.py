@@ -44,6 +44,7 @@ def cmd_lines(lines):
     print(lines)
     print("***")
     for line in lines:
+        print(lines)
         ret, val = subprocess.getstatusoutput(line)
         if ret:
             print("***")
@@ -63,8 +64,7 @@ def git_setIdentity():
 def git_rm_upstream():
     print("**")
     lines = [
-            #"git remote rm upstream"
-            'git remote rm upstream'
+            "git remote rm upstream"
         ]
     print("**")
     return cmd_lines(lines)
