@@ -66,6 +66,7 @@ def git_add_upstream(url):
             "git config --global merge.ours.driver true",
             f"git remote add upstream {url}"
         ]
+    print("*")
     return cmd_lines(lines)
 
 def git_revoke():
