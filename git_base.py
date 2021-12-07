@@ -40,10 +40,15 @@ def run_pythonfile(f):
     return ret
 
 def cmd_lines(lines):
+    print("***")
+    print(lines)
+    print("***")
     for line in lines:
         ret, val = subprocess.getstatusoutput(line)
         if ret:
+            print("***")
             print(ret, val)
+            print("***")
             return ret
 
 def git_setIdentity():
