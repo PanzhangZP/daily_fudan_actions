@@ -61,12 +61,12 @@ def git_rm_upstream():
 
 def git_add_upstream(url):
     try_call(git_rm_upstream)
+    print("*")
     lines = [
             "git config --global pull.rebase true",
             "git config --global merge.ours.driver true",
             f"git remote add upstream {url}"
         ]
-    print("*")
     return cmd_lines(lines)
 
 def git_revoke():
