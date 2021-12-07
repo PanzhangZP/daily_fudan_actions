@@ -54,12 +54,15 @@ def git_setIdentity():
     return cmd_lines(lines)
 
 def git_rm_upstream():
+    print("**")
     lines = [
             "git remote rm upstream"
         ]
+    print("**")
     return cmd_lines(lines)
 
 def git_add_upstream(url):
+    print("*")
     try_call(git_rm_upstream)
     print("*")
     lines = [
