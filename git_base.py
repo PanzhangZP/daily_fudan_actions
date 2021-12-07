@@ -48,6 +48,8 @@ def cmd_lines(lines):
         if ret:
             print("***")
             print(ret, val)
+            print(ret)
+            print(val)
             print("***")
             return ret
 
